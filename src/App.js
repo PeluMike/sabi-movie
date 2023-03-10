@@ -8,10 +8,10 @@ import Page404 from './pages/Page404';
 function App() {
   return (
     <Router className="App">
-        <Routes>
+        <Route>
             <Route path='/' exact element={<Homepage/>}/>
             <Route path='*' exact element={<Page404/>}/>
-        </Routes>
+        </Route>
     </Router>
   );
 }

@@ -1,13 +1,15 @@
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+
+// 
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './App.css';
 
 // pages imports 
 import Homepage from './pages/Homepage';
-import Navbar from './pages/navbar';
 import Page404 from './pages/Page404';
-import Search from './pages/Search';
+
 
 function App() {
+<<<<<<< HEAD
   return (
     <Router className="App">
         
@@ -18,6 +20,17 @@ function App() {
         </Routes>
     </Router>
   );
+=======
+	return (
+		<Router className="App">
+
+			<Routes>
+				<Route path='/' exact element={<Homepage />} />
+				<Route path='' exact element={<Page404 />} />
+			</Routes>
+		</Router>
+	);
+>>>>>>> db43ce2d161d679ad0e013dfa569645444374a53
 }
 
 export default App;
